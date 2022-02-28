@@ -1,0 +1,16 @@
+{
+  "name": "electron_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "electron-nightly": "^19.0.0-nightly.20220209"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC"
+}
