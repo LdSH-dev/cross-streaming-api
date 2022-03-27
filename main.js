@@ -43,6 +43,6 @@ ipcMain.on('assistir', () => {
             contextIsolation: false,
         }
     });
-    assistirWindow.loadURL("https://www.netflix.com/watch/80057443?trackId=14170056");
+    assistirWindow.loaURL("https://www.netflix.com/watch/80057443?trackId=14170056");
     assistirWindow.setMenuBarVisibility(false);
 });

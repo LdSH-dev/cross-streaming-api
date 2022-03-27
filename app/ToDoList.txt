@@ -1,0 +1,8 @@
+- Implementar o delete movie - DONE
+- Ajustar o template (routes e design) - DONE
+    - movie card
+- Integrar com o electron !!! 
+
+SE DER TEMPO
+- User Login and SignUp
+- Autenticacao com as plataformas

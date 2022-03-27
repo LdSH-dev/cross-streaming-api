@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content  %}
+    
+    <div id="app">
+
+        <form @submit.prevent="createMovie">
+            <div class="form-group row">
+              <div class="col-9">
+                  <label for="">Title</label>
+                  <input type="text" class="form-control" v-model="movie.title">
+              </div>
+              <div class="col-9">
+                  <label for="">URL</label>
+                  <input type="text" class="form-control" v-model="movie.url">
+              </div>
+              <div class="col-9">
+                  <div class="col-auto mt-auto">
+                      <button class="btn btn-success" type="submit">Add</button>
+                  </div>
+              </div>
+        </form>
+
+        <div class="mt-5">
+            <div class="card mb-3" v-for="movie, index in movies" :key="index">
+                <div class="card-body row justify-content-between px-4">
+
+                    { movie.title }
+                
+                    <button type="submit" class="btn-close" @click="deleteMovie(movie)"></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock  %}
